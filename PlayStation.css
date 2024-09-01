@@ -9,7 +9,6 @@
 
 body {
     font-family: 'Noto Sans Oriya', Arial, Helvetica, sans-serif;
-    width: 100%;
     overflow-x: hidden;
 }
 .sony {
@@ -22,6 +21,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end; 
+}
+
+@media only screen and (max-width: 768px) {
+    html, body {
+        max-width: 100%;
+        height: 100%;
+        margin:0;
+        padding: 0;
+        overflow-x: hidden;
+    }
 }
 
 @media only screen and (max-height: 768px) {
@@ -38,7 +47,6 @@ body {
     width: 100%;
     top: 0;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0 1.25rem;
     z-index: 1000;
 }
 
@@ -58,7 +66,6 @@ body {
 .navbar img {
     height: 35px;
     margin-right: 10px;
-
 }
 
 .hamburger {
@@ -279,8 +286,8 @@ body {
 
     #download-now {
         text-align: center;
-        margin-top: 15vw;
-        margin-left: -80px;
+        margin-top: 9vw;
+        margin-left: 0px;
     }
     
     #download-now button{
@@ -300,7 +307,6 @@ body {
         padding: 20px;
         display: flex;
         height: 8vw;
-        width: 90%;
         align-items: center;
         justify-content: center;
         overflow: hidden;
@@ -604,7 +610,10 @@ body {
 
 .plus-subinfo {
     position: absolute;
-    left: 15%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
     top: 14vw;
     font-size: 16px;
     color:black;
@@ -710,14 +719,17 @@ body {
 
     .plus-info-h {
         text-align: center;
-        top: 15vw;
+        margin-top: 4vw;
         font-size: 20px;
     }
     
     .plus-subinfo {
+        left: 7%;
         text-align: center;
-        top: 25vw;
-        font-size: 12px;
+        margin-top: 8vw;
+        justify-content: center;
+        width: 100%;
+        font-size: 10px;
     }
 
     .plus-pic {
@@ -756,7 +768,7 @@ body {
         left: 11%;
         position: absolute;
         height: auto;
-        width: 150px;
+        width: 120px;
         margin-top: 3vw;
     }
     
@@ -889,7 +901,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .month {
-        height: 310vw;
+        height: 320vw;
     }
     
     .banner img {
@@ -897,7 +909,7 @@ body {
     }
     
     .banner-caption {
-        left: 2%;
+        left: 3%;
         margin-top: 4vw;
         text-align: left;
         font-size: 25px;
@@ -905,7 +917,7 @@ body {
     }
     
     .banner-subcaption {
-        left: 2%;
+        left: 3%;
         margin-top: 22vw;
         font-size: 12px;
         width: 53%;
@@ -934,13 +946,13 @@ body {
     }
     
     .find-out-more-2 {
-        margin-top: 290vw;
+        margin-top: 305vw;
     }
     
     .find-out-more-2 button {
-        height: 35px;
-        width: 150px;
-        font-size: 13px;
+        height: 30px;
+        width: 130px;
+        font-size: 12px;
     }
 }
 
@@ -953,7 +965,7 @@ body {
 .ps-storeicon {
     width: 100%;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     margin-top: 120px;
 }
 
@@ -1022,6 +1034,8 @@ body {
 @media only screen and (max-width: 768px) {
     .ps-storeicon {
         margin-top: 8vw;
+        justify-content: flex-start;
+        width: 50%;
     }
 
     .ps-store .storecaption {
